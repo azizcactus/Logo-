@@ -1,0 +1,57 @@
+.Container {
+    background-color: red;
+    width: 100px;
+    height: 90px;
+    padding: 0 30px;
+    border-radius: 60px / 20px;
+    position: absolute;
+  }
+  .number {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+  }
+  .number::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 30px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+
+  .Container2 {
+    padding: 50px 50px;
+  }
+  .Number2 {
+    background-color: #eabf4a;
+    height: 50px;
+    width: 100px;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+  }
+  
+  .Number2::after {
+    background-color: #c64034;
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 50px;
+    left: 100px;
+    top: -50px;
+    border-radius: 0 50px 50px 0;
+  }
+  
+  .Number3 {
+    background-color: #4e87e9;
+    transform: rotateZ(180deg);
+    left: 100px;
+  }
+  
+  .Number3::after {
+    background-color: #4ec06e;
+  }
+
